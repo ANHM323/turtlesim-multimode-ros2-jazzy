@@ -12,13 +12,27 @@ Implementación en Python de un nodo de control para turtlesim con tres modos de
 
 ## Estructura del Repositorio
 
-src/
-├── turtlesim_interfaces/       # Interfaces personalizadas (.srv y .action)
-│   ├── srv/SetMode.srv         # Request: string mode | Response: bool, string
-│   ├── srv/GetMode.srv         # Response: bool, string mode
-│   └── action/NavigateWaypoints.action # Goal: x[], y[] | Feedback: idx, dist | Result: bool, string
-└── turtlesim_control/          # Lógica del nodo en Python (rclpy)
-    └── turtlesim_control/mode_controller.py
+```text
+ros2_ws/
+└── src/
+    ├── turtlesim_interfaces/       # Paquete ament_cmake (interfaces)
+    │   ├── action/
+    │   │   └── NavigateWaypoints.action
+    │   ├── srv/
+    │   │   ├── GetMode.srv
+    │   │   └── SetMode.srv
+    │   ├── CMakeLists.txt
+    │   ── package.xml
+    └── turtlesim_control/          # Paquete ament_python (lógica)
+        ├── resource/
+        │   └── turtlesim_control
+        ├── turtlesim_control/
+        │   ├── __init__.py
+        │   ── mode_controller.py
+        ├── package.xml
+        ├── setup.cfg
+        └── setup.py
+```
 
 ## Instalación y Ejecución
 
