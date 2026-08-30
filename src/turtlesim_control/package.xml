@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>turtlesim_control</name>
+  <version>0.1.0</version>
+  <description>Controlador multi-modo para turtlesim en Python</description>
+  <maintainer email="andyh@example.com">andyh</maintainer>
+  <license>Apache-2.0</license>
+
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>turtlesim</depend>
+  <depend>turtlesim_interfaces</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

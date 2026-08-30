@@ -1,0 +1,23 @@
+# ROS2 / colcon
+build/
+install/
+log/
+.colcon/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Entornos
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+
+# ROS logs
+.ros/
