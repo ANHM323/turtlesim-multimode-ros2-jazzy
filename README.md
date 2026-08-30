@@ -1,5 +1,4 @@
 # Turtlesim Multi-Mode Controller (ROS2 Jazzy)
-hola
 
 Implementación en Python de un nodo de control para turtlesim con tres modos de operación, desarrollado para la práctica final de ROS2 Part 2.
 
