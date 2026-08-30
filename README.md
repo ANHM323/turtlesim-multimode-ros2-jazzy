@@ -61,8 +61,4 @@ ros2_ws/
    ros2 service call /set_mode turtlesim_interfaces/srv/SetMode "{mode: 'trajectory'}"
    ros2 action send_goal /navigate_waypoints turtlesim_interfaces/action/NavigateWaypoints "{x: [5.0, 8.0, 2.0], y: [5.0, 2.0, 8.0]}" --feedback
 
-## Entregables
 
-- Informe Técnico (Formato IEEE): [INSERTAR ENLACE AQUÍ]
-- Video de Demostración: [INSERTAR ENLACE AQUÍ]
-- Evidencias gráficas (RQT Graph): Ver carpeta docs/media/
